@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: workspaces-api # ==> This is Service-Id
+
+---
+# Items that apply to ALL profiles:
+eureka:
+  instance:
+    appname: workspaces-api-01  # ==> This is a instance of workspaces-api
+  client:
+    fetchRegistry: true
+server:
+  port: 9090
+
+---
+spring:
+  profiles: workspaces-api-02
+eureka:
+  instance:
+    appname: workspaces-api  # ==> This is a instance of workspaces-api
+server:
+  port: 9091
+
+
