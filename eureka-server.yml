@@ -1,11 +1,12 @@
+server:
+  port: 8282
+
 eureka:
-#  registration:
-#    enabled: true
+  #  registration:
+  #    enabled: true
   client:
-#    registerWithEureka: true
+    registerWithEureka: false
     fetchRegistry: false
-#    serviceUrl:
-#      defaultZone: ${EUREKA_SERV:http://127.0.0.1:8989/eureka/}
   server:
     waitTimeInMsWhenSyncEmpty: 10000
   instance:
