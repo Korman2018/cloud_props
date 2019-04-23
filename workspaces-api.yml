@@ -6,7 +6,7 @@ spring:
 # Items that apply to ALL profiles:
 eureka:
   instance:
-    appname: workspaces-api  # ==> This is a instance of workspaces-api
+    appname: workspaces-api-01  # ==> This is a instance of workspaces-api
   client:
     fetchRegistry: true
 server:
@@ -21,13 +21,4 @@ eureka:
 server:
   port: 9091
 
----
-spring:
-  profiles: workspaces-api-03
-eureka:
-  instance:
-    appname: workspaces-api  # ==> This is a instance of workspaces-api
-server:
-  port: 9092
 
----
