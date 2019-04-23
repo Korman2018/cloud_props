@@ -1,11 +1,11 @@
 eureka:
-  registration:
-    enabled: true
+#  registration:
+#    enabled: true
   client:
-    registerWithEureka: true
+#    registerWithEureka: true
     fetchRegistry: false
-    serviceUrl:
-      defaultZone: ${EUREKA_SERV:http://127.0.0.1:8989/eureka/}
+#    serviceUrl:
+#      defaultZone: ${EUREKA_SERV:http://127.0.0.1:8989/eureka/}
   server:
     waitTimeInMsWhenSyncEmpty: 10000
   instance:
