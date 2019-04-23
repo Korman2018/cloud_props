@@ -9,8 +9,8 @@ eureka:
     appname: workspaces-api  # ==> This is a instance of workspaces-api
   client:
     fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://my-eureka-server-us.com:9001/eureka
+#    serviceUrl:
+#      defaultZone: http://my-eureka-server-us.com:9001/eureka
 server:
   port: 9090
 
