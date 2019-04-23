@@ -1,1 +1,35 @@
-test.message: Helllooooooo!!!
+spring:
+  application:
+    name: workspaces-api # ==> This is Service-Id
+
+---
+# Items that apply to ALL profiles:
+eureka:
+  instance:
+    appname: workspaces-api  # ==> This is a instance of workspaces-api
+  client:
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://my-eureka-server-us.com:9001/eureka
+server:
+  port: 9090
+
+---
+spring:
+  profiles: workspaces-api-02
+eureka:
+  instance:
+    appname: workspaces-api  # ==> This is a instance of workspaces-api
+server:
+  port: 9091
+
+---
+spring:
+  profiles: workspaces-api-03
+eureka:
+  instance:
+    appname: workspaces-api  # ==> This is a instance of workspaces-api
+server:
+  port: 9092
+
+---

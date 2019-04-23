@@ -4,3 +4,4 @@ eureka:
     enabled: true
     serviceUrl:
       defaultZone: ${EUREKA_SERV:http://127.0.0.1:8989/eureka/}
+    fetchRegistry: true
