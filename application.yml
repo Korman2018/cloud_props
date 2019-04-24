@@ -1,9 +1,10 @@
 eureka:
   client:
     registryFetchIntervalSeconds: 5
-#    enabled: true
+    enabled: true
     serviceUrl:
-#      defaultZone: ${EUREKA_SERV:http://127.0.0.1:8282/eureka/}
-#      defaultZone: http://127.0.0.1:8282/eureka
-      defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8282}/eureka/
+      defaultZone: ${EUREKA_SERV:http://127.0.0.1:8282/eureka/}
+    #      defaultZone: http://127.0.0.1:8282/eureka
+    #      defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8282}/eureka/
+    registerWithEureka: false
     fetchRegistry: true
