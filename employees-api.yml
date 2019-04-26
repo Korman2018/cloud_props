@@ -1,5 +1,41 @@
 server:
   port: 9095
 
+  zipkin:
+    enabled: true
+    baseUrl: "http://${ZIPKIN_HOST:localhost}:${ZIPKIN_PORT:9411}/"
+    sleuth:
+      sampler:
+        percentage: 1.0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+feign:
+  enabled: true
+  client:
+    config:
+      workspaces-api:
+        connectTimeout: 2000
+        readTimeout: 2000
+        loggerLevel: full
+  hystrix:
+    enabled: true
+
+hystrix:
+  command:
+    default:
+      execution.timeout.enabled: true
+      execution.isolation.thread.timeoutInMilliseconds: 100
+      circuitBreaker:
+        enabled: true
+        sleepWindowInMilliseconds: 10000
+      fallback:
+        enabled: false
+
+
 
 
