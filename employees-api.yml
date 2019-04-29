@@ -25,6 +25,22 @@ feign:
   hystrix:
     enabled: true
 
+spring:
+  jpa:
+    database: postgres
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      jdbc:
+        lob:
+          non_contextual_creation: true
+  datasource:
+    platform: postgres
+    url: "jdbc:postgres://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}"
+    username: postgres
+    password:
+
 hystrix:
   command:
     default:
