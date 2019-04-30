@@ -7,19 +7,19 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
 
-spring:
-  jpa:
-#    database: postgres
-    show-sql: true
-    generate-ddl: true
-    hibernate:
-      ddl-auto: update
-      jdbc:
-        lob:
-          non_contextual_creation: true
-  datasource:
-    driver-class-name: org.postgresql.Driver
-#    platform: postgres
-    url: jdbc:postgres://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}/postgres
-    username: postgres
-    password: password
+#spring:
+#  jpa:
+##    database: postgres
+#    show-sql: true
+#    generate-ddl: true
+#    hibernate:
+#      ddl-auto: update
+#      jdbc:
+#        lob:
+#          non_contextual_creation: true
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+##    platform: postgres
+#    url: jdbc:postgres://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}/postgres
+#    username: postgres
+#    password: password
