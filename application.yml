@@ -9,7 +9,7 @@ eureka:
 
 spring:
   jpa:
-    database: postgres
+#    database: postgres
     show-sql: true
     generate-ddl: true
     hibernate:
@@ -18,7 +18,8 @@ spring:
         lob:
           non_contextual_creation: true
   datasource:
-    platform: postgres
-    url: "jdbc:postgres://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}/postgres"
+    driver-class-name: org.postgresql.Driver
+#    platform: postgres
+    url: jdbc:postgres://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}/postgres
     username: postgres
-    password:
+    password: password
