@@ -7,3 +7,17 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
 
+spring.datasource:
+  driver-class-name: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/postgres
+  username: postgres
+  password: password
+
+spring.jpa:
+  show-sql: true
+  generate-ddl: true
+  hibernate:
+    ddl-auto: update
+  properties.hibernate:
+    dialect: org.hibernate.dialect.PostgreSQLDialect
+    temp.use_jdbc_metadata_defaults: false
