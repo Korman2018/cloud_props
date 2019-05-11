@@ -38,6 +38,22 @@ hystrix:
       fallback:
         enabled: false
 
+spring:
+  kafka:
+    get-topic: get_employee
+    put-topic: put_employee
+    consumer:
+      group-id: employee-spring-integration
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      batch-size: 16384
+      buffer-memory: 33554432
+      retries: 0
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
 
 
 
