@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d40d5b45-689d-4657-82f6-e5f04c4549c8" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;application.yml">
+    <list default="true" id="d40d5b45-689d-4657-82f6-e5f04c4549c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employees-api.yml" beforeDir="false" afterPath="$PROJECT_DIR$/employees-api.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/employees-api.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="8" selection-start-column="23" selection-end-line="9" />
+            <state relative-caret-position="574">
+              <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -93,8 +94,8 @@
         <option value="$PROJECT_DIR$/sample-api-gateway.yml" />
         <option value="$PROJECT_DIR$/eureka-service-registry.yml" />
         <option value="$PROJECT_DIR$/workspaces-api.yml" />
-        <option value="$PROJECT_DIR$/employees-api.yml" />
         <option value="$PROJECT_DIR$/application.yml" />
+        <option value="$PROJECT_DIR$/employees-api.yml" />
       </list>
     </option>
   </component>
@@ -110,6 +111,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,7 +123,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -368,13 +369,20 @@
       <option name="project" value="LOCAL" />
       <updated>1556813159437</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="add spring kafka config to employees-api">
+      <created>1557601182595</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1557601182595</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14781491" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.124200426" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -391,8 +399,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5012854" side_tool="true" visible="true" weight="0.24495289" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.49871466" visible="true" weight="0.24495289" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50159913" side_tool="true" visible="true" weight="0.1971831" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49840087" visible="true" weight="0.1971831" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -462,7 +470,8 @@
     <MESSAGE value="fix postgres - working" />
     <MESSAGE value="fix application.yaml" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;application.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;application.yml" />
+    <MESSAGE value="add spring kafka config to employees-api" />
+    <option name="LAST_COMMIT_MESSAGE" value="add spring kafka config to employees-api" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application-db.yml" />
@@ -505,8 +514,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/employees-api.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="8" selection-start-column="23" selection-end-line="9" />
+        <state relative-caret-position="574">
+          <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
         </state>
       </provider>
     </entry>
