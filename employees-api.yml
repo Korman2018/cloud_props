@@ -58,7 +58,7 @@ spring:
   file_integration:
     input_dir: "./employees_data/"
     file_pattern: "*.csv"
-    poller_period: 10000
+    poller_period: 100000
     max_messages_per_poll: 10
     ids_separator: ';'
 
